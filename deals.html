@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SML Meat Shop - Great Deals</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #d62828;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    header nav a:hover {
+      color: #ffcc70;
+    }
+
+    section#deals {
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    section#deals h2 {
+      font-size: 2.2rem;
+      color: #d62828;
+      margin-bottom: 40px;
+    }
+
+    .deals-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .deal-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .deal-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .deal-card h3 {
+      color: #d62828;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .deal-card p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+
+    .deal-card .tag {
+      position: absolute;
+      top: 20px;
+      right: -40px;
+      background: #ffcc70;
+      color: #d62828;
+      font-weight: 700;
+      padding: 8px 50px;
+      transform: rotate(45deg);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .deal-card button {
+      background: #d62828;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .deal-card button:hover {
+      background: #f77f00;
+    }
+
+    @media(max-width: 900px) {
+      .deals-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SML Meat Shop</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="deals.html">Great Deals</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section id="deals">
+  <h2>🔥 Great Deals & Offers</h2>
+  <div class="deals-container">
+    <div class="deal-card">
+      <div class="tag">Hot</div>
+      <h3>Mutton Combo Pack</h3>
+      <p>Get Leg + Ribs + Liver at a special price of <strong>₹1600</strong> only!</p>
+      <button onclick="window.location.href='products.html'">Order Now</button>
+    </div>
+
+    <div class="deal-card">
+      <div class="tag">Weekend</div>
+      <h3>Weekend Special</h3>
+      <p>Enjoy <strong>10% off</strong> on all orders above ₹2000. Perfect for family meals!</p>
+      <button onclick="window.location.href='products.html'">Grab Offer</button>
+    </div>
+
+    <div class="deal-card">
+      <div class="tag">Family Pack</div>
+      <h3>Family Pack</h3>
+      <p>Buy 5 Kg bulk order and get a special discounted price. Ideal for gatherings!</p>
+      <button onclick="window.location.href='products.html'">Shop Now</button>
+    </div>
+
+    <!-- Add more deals here -->
+  </div>
+</section>
+
+</body>
+</html>
